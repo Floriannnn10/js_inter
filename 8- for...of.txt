@@ -1,0 +1,29 @@
+// for .. of : //permet de pouvoir accumuler
+const arr1 =[1000,2000,3000,4000];
+let total = 0;
+
+// Première méthode
+for(let accumule of arr1){
+    total += accumule;
+}
+console.log(total); // 10000
+
+
+const arr1 =[1000,2000,3000,4000];
+let total = 0;
+// Deuxième méthode
+for(let i = 0; i < arr1.length; i++){ // Tant que i est plus petit que la taille du tableau parcours...
+    total += arr1[i];
+}
+console.log(total); // 10000
+
+
+
+
+// Les chaines de caractères
+
+const str = 'Je vous aime';
+for(const chr of str){
+    console.log(chr);
+}
+

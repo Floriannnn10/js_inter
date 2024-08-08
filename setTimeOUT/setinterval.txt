@@ -1,0 +1,25 @@
+// Quelle est la difference entre setTimeout et setInterval ?
+// setTimeout permet de lancer une fonction une seule fois après un certain temps
+// setInterval permet de lancer une fonction à intervalle régulier
+
+// setTimeout
+const timeout = setTimeout(presentation, 2000);
+
+function presentation(){
+    clearTimeout(timeout); // clearTimeout bloque completement l'affichage 
+    console.log("Bonjour, je suis une fonction de présentation");
+}
+
+// setInterval
+let = compteur = 0;
+
+setInterval(incr, 1000);
+function incr(){
+   compteur++;
+   console.log(compteur);
+}
+
+
+
+
+

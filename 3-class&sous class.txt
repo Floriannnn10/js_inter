@@ -1,0 +1,48 @@
+// Une class c'est un ensemble de propriété || Attribut && de methode. 
+// le constructeur permet de donner accès à des valeurs dynamiques dans toute la classe 
+// This permet de faire une reference avec les valeurs en paramètres
+// on utlise les classe lorsqu'il y'a plusieurs propriétées qui doivent se repeter pour un entitée 
+class Personne {
+    constructor(nom, prenom, age) {
+        this.nom = nom;
+        this.prenom = prenom;  
+        this.age = age;
+    }
+
+    // une methode , c'est une fonction
+    bienvenue() {
+        console.log(`Bienvenue ${this.nom} ${this.prenom} et votre age est: ${this.age}`);
+    }
+}
+
+const Personne1 = new Personne("rajaa", "sarah", 24);
+const Personne2 = new Personne("Florian", "Georges", 20);
+
+console.log(Personne1);
+console.log(Personne2);
+console.log(Personne1.bienvenue());
+console.log(Personne2.bienvenue());
+
+
+
+// sous classe
+// "super" c'est comme les this mais les sous classe
+
+class Etudiant extends Personne {
+    constructor(nom, prenom, age, classe) {
+        super(nom, prenom, age); // on appelle le constructeur de la classe
+        this.classe = classe;
+    }
+
+    bienvenuefils() {
+        console.log(`Bienvenue ${this.nom} ${this.prenom} votre age est: ${this.age} et votre classe est: ${this.classe}`);
+    }
+}
+
+const etudiant1 = new Etudiant('Banga', 'Florian', 21, 'B3Dev');
+const etudiant2 = new Etudiant('Mian', 'marie', 19, 'B2Dev');
+
+console.log(etudiant1);
+console.log(etudiant2);
+console.log(etudiant1.bienvenuefils());
+console.log(etudiant2.bienvenuefils());

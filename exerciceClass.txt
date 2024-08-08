@@ -1,0 +1,47 @@
+class Animal{
+    constructor(race,couleur,age){
+    this.race = race;
+    this.couleur = couleur;
+    this.age = age;
+}
+
+bienvenueAnimal(){
+    console.log(`Je suis la: ${this.race} avec ${this.couleur} et un: ${this.age}`);
+}
+
+}
+
+const Animal1 = new Animal("Lion", "jaune nature", 21);
+const Animal2 = new Animal("Tigre", "Orange savane", 25);
+const Animal3 = new Animal("Dauphin", "Bleu océan", 20);
+
+console.log(Animal1);
+console.log(Animal2);
+console.log(Animal3);
+
+console.log(Animal1.bienvenueAnimal());
+console.log(Animal2.bienvenueAnimal());
+console.log(Animal3.bienvenueAnimal());
+
+
+class Comportement extends Animal{
+    constructor(race,couleur,age,comportement){
+        super(race,couleur,age);
+        this.comportement = comportement;     
+}
+
+bienvenueAnimalfils(){
+    console.log(`Je suis le: ${this.race} avec ${this.couleur} et avec un age de ${this.age} et pour comportement ${this.comportement}`); 
+}
+}
+
+const comportement1 = new Comportement('Lion', 'jaune nature', '21', 'Sauvage');
+const comportement2 = new Comportement('Tigre', 'Orange savane', '25', 'Sauvage');
+const comportement3 = new Comportement('Dauphin', 'Bleu océan', '20', 'Domestique');
+
+console.log(comportement1);
+console.log(comportement2);
+console.log(comportement3);
+console.log(comportement1.bienvenueAnimalfils());
+console.log(comportement2.bienvenueAnimalfils());
+console.log(comportement3.bienvenueAnimalfils());

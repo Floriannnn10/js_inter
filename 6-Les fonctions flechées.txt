@@ -1,0 +1,51 @@
+// arrow fonctions ou fonctions flechée
+
+// function presentation(){
+//     console.log("Bonjour, je suis une fonction classique");
+// }
+// presentation(); // appel de la fonction
+
+
+// presentation2 = () =>{
+//     console.log("Bonjour, je suis une fonction flechée");
+// }
+// presentation2();
+
+
+
+
+
+// La réference this existe que pour les fonctions basiques tandis que pour utiliser this dans une fonction fleché on utilse le nom déclarer à la variable
+
+let obj = {
+    nom: 'Jean',
+    prenom: 'Dupont',
+    func1: ()=>{
+        console.log(`Bonjour, ${obj.nom} ${obj.prenom}.  Je suis une fonction flechée`);
+    },
+
+    func2: function(){
+        console.log(`Bonjour, ${this.nom} ${this.prenom}. Je suis une fonction classique`);
+    }
+
+}
+
+obj.func1();
+obj.func2();
+
+
+
+const fruits = ['Pommes', 'Oranges', 'Bananes'];
+// foreach
+fruits.forEach((fruit) => console.log('Tableau de fruits: ' +fruit));
+
+// map 
+const majuscule = fruits.map((fruit) => fruit.toUpperCase());
+console.log(majuscule);
+
+// filter 
+// charAt signifie que pour chaque élément dont tu verra la première lettre indiqué dans le Script , tu le saute 
+const panier = fruits.filter((fruit) => fruit.charAt(0)!=='O');
+console.log('Panier: ' + panier);
+
+// NB: Faites des recherches sur Flat, FlatMap, reducerRight, copywithin 

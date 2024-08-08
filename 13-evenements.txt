@@ -1,0 +1,86 @@
+// const btn = document.querySelector('#connexion');  
+// // 1ère méthode 
+// btn.onclick = function(){
+//     alert ('cliquer sur le bouton');
+// }
+
+// const btn = document.querySelector('#connexion');
+// // 2ème méthode : la plus utiliser
+// btn.addEventListener('click' , function(){
+//     alert ('cliquer sur le bouton');
+// })
+
+
+// const btn = document.querySelector('#connexion');
+//     // 3ème méthode
+//     btn.addEventListener('click', foo);
+//         function foo(){
+
+//             console.log("cliquer sur le bouton")
+//             alert('cliquer sur le bouton');
+//             btn.removeEventListener('click', foo); // clicker sur le bouton et supprimer automatiquement grace à "btn.removeEventListener('click', foo)"
+//         }
+
+
+        // // 4e méthode 
+        // const btn = document.querySelector('#connexion');
+        // btn.addEventListener('click', function(e){
+        //     e.stopPropagation();// permet de stopper une propagation.
+        //     console.log("Event Button");
+        // })
+
+        // document.body.addEventListener('click' , function(e){
+        //     console.log("Event body");
+        // })
+
+
+        // 5eme methode 
+        const form = document.querySelector('form');
+        const input = document.querySelector('#input');
+        const display = document.querySelector('#display');
+        form.addEventListener('submit' , function(e){
+            e.preventDefault();// empecher la soumission du code
+            console.log("Event form");
+            display.textContent = input.value;
+        })
+
+partie HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br><br><br>
+    <!-- <div class="image">
+        <h1>Javascript</h1>
+        <img src="" id="chien" alt="image de chien" />
+    </div>
+
+    <div class="container" style="padding: 20px;">
+        <button type="button" id="connexion">Se Connecter</button>
+    </div> -->
+
+
+
+    <div class="container-fluidd">
+        <form>
+            <input type="text" placeholder="Votre text" id="input">
+            <input type="submit" id="inscription" value="S'inscrire">
+        </form>
+
+        <p> Votre Input: <span id="display"></span></p>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
+    

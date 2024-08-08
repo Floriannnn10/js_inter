@@ -1,0 +1,11 @@
+// Rest operator : agit uniquement que dans les fonctions.
+
+function arr(...nbs){
+    console.log(nbs);
+}
+
+function arr1(a,b,c,d,e,f){
+    console.log(a,b,c,d,e,f);
+}
+arr(0,1,2,3,4,5,6,7,8,9,)
+

@@ -1,0 +1,52 @@
+// Exercice 1 : Combine les deux tableaux suivants en un seul tableau.
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6];
+// const result = [...array1, ...array2];
+// console.log(result); // [1, 2, 3, 4, 5, 6]
+
+
+
+
+// Exercice 2 : Crée une copie du tableau suivant sans modifier l'original.
+// const originalArray = ['a', 'b', 'c'];
+
+// const copiedArray = [...originalArray];
+// console.log(copiedArray);
+
+
+
+
+// Exercice 3 : Fusionne les deux objets suivants en un seul objet.
+// const object1 = { name: 'Alice', age: 25 };
+// const object2 = { job: 'Developer', country: 'USA' };
+
+// const join = {...object1, ...object2};
+// console.log(join);
+
+
+
+// Exercice 4 : Ajoute les éléments 4, 5 et 6 au début du tableau suivant.
+// const numbers = [1, 2, 3];
+// const numbers2 = [4, 5, 6];
+
+// const result =[...numbers2, ...numbers];
+// console.log(result);
+
+
+
+//Exercice 5 :Utilise l'opérateur de spread pour passer les éléments du tableau suivant comme arguments à une fonction.
+// const values = [10, 20, 30];
+
+// function sum(a, b, c) {
+//   return a + b + c;
+// }
+// const result = sum(...values);
+// console.log(result);
+
+
+
+// Exercice 6 : Utilise l'opérateur de spread avec Set pour supprimer les doublons du tableau suivant.  
+// const duplicates = [1, 2, 2, 3, 4, 4, 5];
+// const unique = [...new Set(duplicates)];
+
+// console.log(unique); 

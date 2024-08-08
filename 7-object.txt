@@ -1,0 +1,24 @@
+// object literals 
+
+let prenom = 'Tom';
+let age = 28;
+
+const myObj = {
+    prenom,
+    age,
+    classe:'classe',
+    hello(){
+        console.log('hello world');
+    },
+    func: ()=>{
+        console.log('hello world');
+    },
+    func2: function(){
+        console.log('hello world');
+    }
+}
+
+console.log(myObj);
+console.log(myObj.prenom);
+console.log(myObj.age);
+console.log(myObj.hello());

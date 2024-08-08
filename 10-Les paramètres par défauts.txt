@@ -1,0 +1,10 @@
+// Les paramètres par défauts
+
+function add(ifran = []){
+    let total = 0;
+    for (let i = 0; i < ifran.length; i++) {
+        total += ifran[i];
+    }
+    console.log(total);
+}
+add();

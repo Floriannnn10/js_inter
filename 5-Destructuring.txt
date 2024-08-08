@@ -1,0 +1,16 @@
+//Destructuring : permet de pouvoir extraire des proprietées ou des methodes dans un objet
+
+const profil = {
+    name: 'Florian',
+    adresse:{
+        rue: "67200 main street",
+        ville: 'Abidjan',
+        commune: 'Angré'
+    },
+    loisirs:['film', 'sport'],
+
+};
+
+const {commune,rue,ville} = profil.adresse;
+
+console.log(commune,rue,ville);

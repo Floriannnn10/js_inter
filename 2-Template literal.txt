@@ -1,0 +1,6 @@
+// Template literals ou les littéraux de gabarie
+
+// let age = 26;
+// let name = "Florian";
+
+// console.log(`je suis name et j'ai age ans. je calcule ${5+6}`);

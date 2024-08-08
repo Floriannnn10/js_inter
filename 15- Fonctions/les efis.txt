@@ -1,0 +1,23 @@
+// Les Efis permettent de se lancer automatiquement au lancement d'un site.
+
+(function(){
+    console.log('Hello World');
+})()
+
+// ------------------------//
+
+// une fonction avec recursion est une fonction qui s'appelle elle-même.
+function recursion(num) {
+
+    num++;
+    if(num>10){
+        console.log(`c'est bon ! ${num}`);
+    }else{
+        recursion(num);
+    }
+}
+recursion(15);
+
+// recherche sur les chaines de caractère
+// Les promesses 
+// Async await 

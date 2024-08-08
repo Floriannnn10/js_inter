@@ -1,0 +1,21 @@
+/// var => Global scoped variable
+///es6 => 2015
+
+1- var
+function ifran() {
+    for (var i = 0; i < 5; i++) {
+        console.log(i);
+    }
+    console.log("Après le blog, la variable existe toujours en dehors de la fonction:" + i);
+}
+ifran();
+
+
+2- let 
+function ifran() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+    console.log("Après le blog, la variable existe toujours en dehors de la fonction:" + i);
+}
+ifran();

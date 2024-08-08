@@ -1,0 +1,63 @@
+// 1- Crée une classe Personne avec les propriétés nom et age, et une méthode sePresenter qui affiche "Bonjour, je m'appelle [nom] et j'ai [age] ans."
+
+// 2- Crée une sous-classe Etudiant qui hérite de Personne et ajoute une propriété matricule et une méthode etudier qui affiche "[nom] est en train d'étudier."
+
+
+// 1-
+
+// creation de la classe personne et des propriétées
+
+class Personne {
+    constructor(nom, age) {
+        this.nom = nom;
+        this.age = age;
+    }
+    // creation de la méthode sePresenter
+    sePresenter() {
+        console.log(`Bonjour, je m'appelle ${this.nom} et j'ai ${this.age} ans`)
+    }
+}
+
+// creation des constantes personne1&2&3 et stocker ça dans les consoles log pour afficher
+const Personne1 = new Personne("Yasmine", 18);
+const Personne2 = new Personne("Florian", 21);
+const Personne3 = new Personne("Perle", 5);
+
+console.log(Personne1);
+console.log(Personne2);
+console.log(Personne3);
+
+console.log(Personne1.sePresenter());
+console.log(Personne2.sePresenter());
+console.log(Personne3.sePresenter());
+
+
+// 2 
+// creation de la sous-classe etudiant et des propriétés
+class Etudiant extends Personne {
+    constructor(nom, age, matricule) {
+        super(nom, age);
+        this.matricule = matricule;
+    }
+    // creation de la méthode etudier
+    etudier() {
+        console.log(`${this.nom} est en train d'étudier`);
+    }
+}
+
+// creation des constantes et stocker dans les consoles log pour afficher
+const Etudiant1 = new Etudiant("Yasmine", 18, 123);
+const Etudiant2 = new Etudiant("Florian", 21, 456);
+const Etudiant3 = new Etudiant("Perle", 5, 789);
+console.log(Etudiant1);
+console.log(Etudiant2);
+console.log(Etudiant3);
+
+console.log(Etudiant1.etudier());
+console.log(Etudiant2.etudier());
+console.log(Etudiant3.etudier());
+
+
+
+
+

@@ -1,0 +1,21 @@
+// dans le fichier.js
+// importer des variables d'une page à une autre
+export const data1 = [1,2,3];
+export const data2 = [4,5,6];
+export const data3 = [7,8,9];
+
+export default function hello(){  
+    return "hello world";
+}
+
+
+
+
+
+// dans le script
+// module import et Export 
+import {data1,data2,data3 } from "./fichier.js";
+import mafonctionexportee from "./fichier.js";
+
+console.log(data1,data2,data3);
+console.log(mafonctionexportee());

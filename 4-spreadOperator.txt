@@ -1,0 +1,14 @@
+// le spread opérator : Il permet d'ajouter une propriété dans tableau
+// 1er exemple
+
+const arr = [1,2,3]
+const arr2 = [...arr,4]
+console.log(arr2);
+arr2.push(5);
+console.log(arr2);  
+
+// 2eme exemple
+const obj = {nom:'Banga', prenom:'Georges', age:21}
+const obj2 = {...obj, email:'bangageorges@gmail.com'};
+
+console.log(obj2);

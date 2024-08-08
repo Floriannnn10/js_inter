@@ -1,0 +1,36 @@
+//Destructuring : permet de pouvoir extraire des proprietées ou des methodes dans un objet
+
+// Exercice 2:
+// a. Utilisez la destructuration pour extraire les propriétés name et age dans des variables du même nom.
+
+// b. Utilisez la destructuration pour extraire la propriété city de l'adresse et renommez-la en town.
+
+// c. Utilisez la destructuration pour extraire les hobbies dans des variables nommées hobby1, hobby2, et hobby3.
+
+const person = {
+    name: 'John Doe',
+    age: 30,
+    address: {
+      street: '123 Main St',
+      city: 'Anytown',
+      country: 'USA'
+    },
+    hobbies: ['reading', 'traveling', 'cooking'],
+  };
+
+// a-
+
+const { name, age } = person;
+console.log(name, age);
+
+// b-
+
+const { address: { city: town } } = person;
+console.log(town);
+
+// c-
+const { hobbies: [hobby1, hobby2, hobby3] } = person;
+console.log(hobby1, hobby2, hobby3);
+
+
+

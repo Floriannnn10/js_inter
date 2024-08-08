@@ -1,0 +1,5 @@
+// Crée une fonction asynchrone qui utilise setTimeout pour afficher un message après un délai de 3 secondes.
+const temps = setTimeout(message,3000); 
+function message(){
+    console.log(`Je suis le message qui va etre afficher après trois secondes`);
+}

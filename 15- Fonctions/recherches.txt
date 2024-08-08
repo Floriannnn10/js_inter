@@ -1,0 +1,41 @@
+// Qu'est ce qu'une chaine de caractere en javascript ?
+
+// Une chaine de caractere en javascript est un objet de type String.
+// Elle est composée de caractere, qui sont des elements de type String.
+// Les chaines de caractere sont immuables, c'est a dire qu'elles ne
+// peuvent pas etre modifiees une fois qu'elles ont ete creees.
+// Les chaines de caractere sont des objets, donc elles ont des
+// proprietes et des methodes.
+
+
+// Qu'est ce qu'une promesse ?
+
+// Une promesse est un objet (Promise) qui représente la complétion ou l'échec d'une opération asynchrone.
+
+
+// Qu'est ce qu'une fonction asynchrone ??
+
+// Une fonction asynchrone est une fonction précédée par le mot-clé async, et qui peut contenir le mot-clé await. async et await permettent un comportement asynchrone, basé sur une promesse (Promise), écrite de façon simple, et évitant de configurer explicitement les chaînes de promesse.
+// Les fonctions asynchrones peuvent également être définies comme des expressions.
+
+
+function resolveAfter2Seconds() {
+    // Retourne une nouvelle promesse
+    return new Promise((resolve) => {
+        // Utilise setTimeout pour attendre 2 secondes
+        setTimeout(() => {
+            // Résout la promesse avec la valeur 'resolved'
+            resolve('resolved');
+        }, 2000); // Délai de 2000 millisecondes (2 secondes)
+    });
+}
+
+async function asyncCall() {
+    console.log('calling'); // Affiche 'calling' dans la console
+    // Attend que la promesse de resolveAfter2Seconds soit résolue
+    const result = await resolveAfter2Seconds();
+    // Affiche le résultat (expected output: 'resolved')
+    console.log(result);
+}
+
+asyncCall();
